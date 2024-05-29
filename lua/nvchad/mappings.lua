@@ -114,7 +114,7 @@ end, { desc = "terminal toggle floating term" })
 -- whichkey
 map("n", "<leader><s-w>K", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 
-map("n", "<leader>Wk", function()
+map("n", "<leader><s-w>k", function()
   vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
 end, { desc = "whichkey query lookup" })
 
